@@ -1,0 +1,43 @@
+// Variables
+$primary-color: rgba(0,0,0,0.1);
+$hover-color: rgba(0,0,0,0.3);
+$text-color: #fff;
+$background-color: #333;
+$border-radius: 4px;
+$transition-duration: 0.3s;
+
+// Dropdown Styles
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    &__toggle {
+        background-color: $primary-color;
+        color: $text-color;
+        padding: 10px 20px;
+        font-size: 25px;
+        border: none;
+        cursor: pointer;
+        border-radius: $border-radius;
+        transition: background-color $transition-duration;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+        
+
+    &__menu {
+        position: absolute;
+        // background-color: $background-color;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: $border-radius;
+        z-index: 1;
+        top:45px;
+        width:500px;
+        left:30px;
+        height: auto;
+        margin-top: 10px;
+        
+    }
+}
